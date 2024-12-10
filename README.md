@@ -11,6 +11,7 @@ Este proyecto utiliza redes neuronales convolucionales (CNN) implementadas en Ke
 5. [Cómo Usar este Proyecto](#cómo-usar-este-proyecto)
 6. [Entrenamiento del Modelo](#entrenamiento-del-modelo)
 7. [Resultados](#resultados)
+8. [Data Trained](#data-trained)
 
 ## Introducción
 
@@ -61,7 +62,7 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/pneumonia-detection.git
+git clone https://github.com/begiCoding/pneumonia-detection.git
 cd pneumonia-detection
 ```
 
@@ -73,7 +74,9 @@ pip install -r requirements.txt
 
 ### 3. Preparar los datos
 
-Coloca las imágenes de rayos X en las carpetas `train`, `test` y `val` dentro del directorio `data`. Asegúrate de que las imágenes estén organizadas en subcarpetas por clase (`Pneumonia` y `Normal`).
+Coloca las imágenes de rayos X en la carpeta de raiz `data` y una vez dentro, en las carpetas `train`, `test` y `val` dentro del directorio `data`. Asegúrate de que las imágenes estén organizadas en subcarpetas por clase (`PNEUMONIA` y `NORMAL`).
+
+https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
 ### 4. Ejecutar el notebook
 
@@ -101,7 +104,13 @@ A continuación se incluyen gráficos de precisión y pérdida:
 ![Confusion Matrix](results/confusion_matrix.png)
 
 ## Resultados
+- Test Loss: 0.4699665606021881
 
-Test Loss: 0.4699665606021881
-Test Accuracy: 0.8349359035491943
-Test AUC: 0.9161844849586487
+- Test Accuracy: 0.8349359035491943
+
+- Test AUC: 0.9161844849586487
+
+## Data Trained
+Link to the trained data.
+Need to add to the root folder "data" of the project the folders from `chest_xray`
+https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
