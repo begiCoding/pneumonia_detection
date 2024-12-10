@@ -8,3 +8,5 @@ data/train/NORMAL
 data/train/PNEUMONIA
 data/val/NORMAL
 data/val/PNEUMONIA
+best_model.keras
+result/best_model.keras
